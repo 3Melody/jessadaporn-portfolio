@@ -47,7 +47,7 @@ export class AboutMe extends Component {
                </a>
          
                   <button className="w-full rounded-lg border-primary color-primary">
-                    Download CV
+                   <a href="https://drive.google.com/file/d/1yjT0G9Hp4yGoKnxISQF7tMW0dzbEHD0F/view?usp=drive_link" target="_blank"> Download CV</a>
                   </button>
             
               </div>

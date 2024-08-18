@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 const Award = () => {
     return (
-       <div className='award section'> 
+       <div data-aos="flip-left" className='award section'> 
             <div className='container mx-auto white'>
                 <div className='flex justify-center text-xl xl:text-2xl font-bold mb-5'>AWARD</div>
                  <Swiper 

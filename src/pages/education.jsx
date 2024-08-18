@@ -3,7 +3,7 @@ import React from "react";
 const Education = () => {
   return (
     <div className="education section">
-      <div className="container mx-auto">
+      <div data-aos="fade-down" className="container mx-auto ">
         <div className="white flex justify-center my-10 font-bold text-2xl">Education</div>
         <div className="flex xl:hidden w-full">
           <div className="line-edu"></div>
