@@ -27,13 +27,13 @@ function Navbar() {
                             <a href='#about'><div>About</div></a>
                             <a href='#skill'><div>Skill</div></a>
                             <a href='#project'><div>Project</div></a>
-                            <a href='#contact'>
+                            {/* <a href='#contact'>
                                 <div>
                                     <button className='bg-primary text-black rounded-md py-3 px-8'>
                                         Contact me
                                     </button>
                                 </div>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ function Navbar() {
                         <a href='#about' className='block py-2 text-white' onClick={closeMenu}>About</a>
                         <a href='#skill' className='block py-2 text-white' onClick={closeMenu}>Skill</a>
                         <a href='#project' className='block py-2 text-white' onClick={closeMenu}>Project</a>
-                        <a href='#contact' className='block py-2 text-white' onClick={closeMenu}>Contact Me</a>
+                        {/* <a href='#contact' className='block py-2 text-white' onClick={closeMenu}>Contact Me</a> */}
                     </div>
                 )}
             </div>
