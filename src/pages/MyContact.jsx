@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import db from "../firebase.js";
 import { collection, addDoc } from "firebase/firestore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+<<<<<<< HEAD
 import { getFirestore } from 'firebase/firestore';
+=======
+>>>>>>> parent of 842e621 (delete fire base)
 
 const Contact = () => {
   const [form, setForm] = useState({
