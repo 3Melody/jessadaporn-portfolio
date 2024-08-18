@@ -1,35 +1,84 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { Component, useEffect } from 'react';
+import Home from "./pages/Home";
+import About from "./pages/AboutMe";
+import Skill from "./pages/Skill";
+import Project from "./pages/MyProject";
+import Contact from "./pages/MyContact";
+import Comment from "./pages/Comment";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
+import './App.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+
+library.add(fas, fab, far);
+
+
+
+
+
+
+
+
+const App = () => {
+
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const options = {
+      root: null,
+      threshold: 0.6,
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.id;
+        const btn = document.querySelector(`.btn-all div[data-id='${id}']`);
+  
+        if (entry.isIntersecting) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }, options);
+  
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="all-page">
+      <div className="relative">
+        <div className="btn-all gap-5">
+        <a href='#home'> <div data-id="home"><FontAwesomeIcon icon="fa-solid fa-house" /></div></a>
+         <a href='#about'> <div data-id="about"><FontAwesomeIcon icon="fa-regular fa-address-card" /></div></a>
+         <a href='#skill'> <div data-id="skill"><FontAwesomeIcon icon="fa-brands fa-react" /></div></a>
+         <a href='#project'> <div data-id="project"><FontAwesomeIcon icon="fa-regular fa-file-code" /></div></a>
+         <a href='#contact'> <div data-id="contact"><FontAwesomeIcon icon="fa-regular fa-envelope" /></div></a>
+        </div>
 
-export default App
+        <div className="mx-auto"><Navbar /></div>
+        <section id="home"><Home /></section>
+        <section id="about"><About /></section>
+        <section id="skill"><Skill /></section>
+        <section id="project"><Project /></section>
+        <section id="contact"><Contact /></section>
+        <Comment />
+
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default App;

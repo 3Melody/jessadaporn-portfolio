@@ -1,42 +1,477 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+body{
+    background-color:#1D1D1D  ;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.color-primary{
+    color: #A7EDC8;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+    padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bg-primary{
+    background-color: #A7EDC8;
 }
 
-.card {
-  padding: 2em;
+.border-primary{
+    border: 1px solid #A7EDC8;
 }
 
-.read-the-docs {
-  color: #888;
+
+.detail{
+    color: #C0C0C0;
+}
+
+.white{
+    color: white;
+}
+
+.bg-1{
+    position: relative;
+    width: 326px;
+    height: 326px;
+    background-color: #7FCBBA;
+    border-radius: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  
+    
+}
+
+.bg-2{
+    position: absolute;
+    width: 268px;
+    height: 268px;
+    background-color: #A7EDC8;
+    border-radius: 100%;
+    z-index: 2;
+    right: 5px;
+    bottom: 30px;
+    left: 54%;
+    transform: translate(-50%, 0%);
+
+}
+
+.profile{
+    position: absolute;
+    z-index: 3;
+    width: 297px;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.blur-bg img{
+    position: absolute;
+    z-index: -1;
+   right: 0;
+}
+
+.portfolio{
+    color: white;
+    position: relative;
+    
+}
+
+.section{
+    height: 100dvh;
+    padding-top: 20px;
+   
+
+   
+}
+
+.section::before{
+    content: '';
+    position: absolute;
+    background-color: #A7EDC8;
+    filter: blur(60px);
+    opacity: 0.3;
+    z-index: -1;
+    width: 300px;
+    height: 500px;
+    border-radius: 100%;
+    right: 0;
+}
+
+.btn-home{
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 6px;
+}
+
+.home .icon {
+    font-size: 26px;
+}
+
+.skill .box-skill{
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+ 
+}
+
+.skill .box-skill:hover{
+    background-color: #7FCBBA;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+-webkit-box-shadow:0px 0px 36px 0px rgba(45,255,196,0.86);
+-moz-box-shadow: 0px 0px 36px 0px rgba(45,255,196,0.86);
+box-shadow: 0px 0px 36px 0px rgba(45,255,196,0.86);
+
+    
+
+    
+}
+
+.animation{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: auto;
+    
+    
+}
+
+.project .box-project{
+    background-color: #F5DE19;
+    color: black;
+    justify-content: center;
+    display: flex;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project .bg-fled{
+    background-image: linear-gradient( #00000000,black, black);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    z-index: 30;
+  
+   
+}
+
+.project .name-project {
+   
+    z-index: 2;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 31;
+    
+}
+
+.contact .icon{
+    font-size: 36px;
+}
+
+.comment .img-comment{
+    min-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #7FCBBA;
+    border-radius: 100%;
+    margin-right: 10px;
+ 
+}
+
+.navbar .menu-show div{
+    margin-bottom: 10px;
+}
+
+.sliding-container {
+    width: 100%; 
+    overflow: hidden;
+}
+
+.sliding-text {
+    display: inline-block;
+    font-size: 24px;
+    white-space: nowrap;
+    animation: slide 15s linear infinite;
+}
+
+.all-page .btn-all{
+background: rgba(255, 255, 255, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+bottom: 20px;
+position: fixed;
+left: 50%;
+transform: translateX(-50%);
+z-index: 100;
+padding: 10px 30px;
+
+display: flex;
+justify-content: center;
+
+align-items: center;
+font-size: 20px;
+}
+
+.all-page .btn-all div {
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.all-page .btn-all div:hover {
+   background-color: #7FCBBA;
+   border-radius: 6px;
+   cursor: pointer;
+   color: #1D1D1D;
+}
+
+.all-page .btn-all div.active {
+   background-color: #7FCBBA;
+   color: #1D1D1D;
+   border-radius: 6px;
+}
+
+.all-page .btn-all div.active:hover {
+   background-color: #5FB99A;
+   color: #1D1D1D;
+}
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.footer{
+    background-color: #7FCBBA;
+    padding-bottom: 80px;
+}
+
+.footer .move-top{
+    cursor: pointer;
+    font-size: 24px;
+    
+}
+
+.project .project-name{
+    color: #F5DE19;
+}
+
+@media screen and (max-width: 376px) {
+    .home .profile{
+        width: 250px;
+    }
+
+    .home .bg-1{
+        width: 250px;
+        height: 250px;
+    }
+
+    .home .bg-2{
+        width: 200px;
+        height: 200px;
+    }
+
+    .container {
+        padding: 20px 20px;
+    }
+
+    .about .profile{
+        width: 250px;
+    }
+
+    .about .bg-1{
+        width: 250px;
+        height: 250px;
+    }
+
+    .about .bg-2{
+        width: 200px;
+        height: 200px;
+    }
+
+    .skill{
+        padding-top: 100px;
+    }
+
+    .project{
+        padding-top: 300px !important;
+    }
+
+    .project .name-project{
+        font-size: 36px;
+    }
+
+    .project .bg-fled{
+       bottom: -200px;
+    }
+
+    .project .name-project{
+        bottom: -200px;
+    }
+
+    .contact{
+        padding-top: 150px;
+    }
+
+    .comment{
+        padding-top: 400px;
+    }
+   
+}
+
+
+
+@media screen and (min-width: 1280px) {
+
+    .home .bg-1{
+        width: 500px;
+        height: 500px;
+    }
+
+    .home .bg-2{
+        width: 400px;
+        height: 400px;
+    }
+
+    .home .profile{
+        width: 450px;
+        top: -50px;
+        position: absolute;
+    }
+
+    .home .portfolio{
+        font-size:100px ;
+    }
+
+    .home .stroke-title {
+        font-size: 100px;
+        -webkit-text-stroke: 2px rgb(255, 255, 255);
+        color: transparent; 
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+    }
+
+    .project .project-img{
+        max-height: 600px;
+        
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+    }
+
+    .skill{
+        display: flex;
+        align-items: center;
+     
+    }
+
+    .home .port-1 {
+        position: relative;
+        animation-name: port1;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    
+    .home .h-port {
+        position: relative;
+        animation-name: hport;
+        animation-duration: 1s;
+    }
+    
+    @keyframes hport {
+        from {left: -300px;}
+        to {left: 0;}
+    }
+    
+    @keyframes port1 {
+        from {top: 100px; opacity: 0;}
+        to {top: 0; opacity: 1;}
+    }
+    
+    .home .port-2 {
+        position: relative;
+        animation-name: port2;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes port2 {
+        from {bottom: 100px; opacity: 0;}
+        to {bottom: 0; opacity: 1;}
+     
+    }
+    box-skill
+    .footer .arrow:hover{
+        position: relative;
+        animation: arrow 1s infinite;
+        
+    }
+
+    @keyframes arrow {
+        from {top: 10px;}
+        to {top: 0;}
+    }
+
+    .about .iconShow1{
+        position: absolute;
+        width: 300px;
+        bottom: 0;
+        right: 0;
+        animation: iconShow1 2s ease-in-out infinite;
+     
+    }
+
+    @keyframes iconShow1 {
+        0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-50px); /* Adjust the value to control the distance of the movement */
+          }
+          100% {
+            transform: translateY(0);
+          }
+    }
+  
+    
+    
+
+   
+
+   
 }
