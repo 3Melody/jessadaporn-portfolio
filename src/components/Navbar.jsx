@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Bar from '../assets/navbar/bar.png'; // Keep the hamburger icon
+import Logo from '../assets/logo.jpg'
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ function Navbar() {
                 <div className='container mx-auto'>
                     <div className='flex justify-between items-center px-4 py-3 '>
                         <a href='#home'>
-                            <div className='text-white text-2xl font-bold'>Logo</div>
+                            <div className='text-white text-2xl font-bold'><img src={Logo} className='w-10' alt="" /></div>
                         </a>
                         <div className='xl:hidden'>
                             <img src={Bar} alt="Menu" onClick={toggleMenu} />

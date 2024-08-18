@@ -16,7 +16,7 @@ export class AboutMe extends Component {
    
         <div className="container  mx-auto">
          <div className="xl:flex xl:justify-around ">
-            <div className="mt-10 relative xl:hidden">
+            <div className=" relative xl:hidden">
               <img src={Profile1} className="profile " alt="" />
               <div className="bg-2 "></div>
               <div className="bg-1"></div>
@@ -39,10 +39,12 @@ export class AboutMe extends Component {
                 <a href="https://www.linkedin.com/in/jessadaporn-tatin/" target="_blank" rel="noopener noreferrer"><div>LinkedIn : www.linkedin.com/in/jessadaporn-tatin</div></a>
               </div>
               <div className="flex mt-10 gap-3">
-                <button className="w-full p-3 rounded-lg bg-primary">
-                  <FontAwesomeIcon icon="fa-regular fa-envelope" className="me-2" />
-                  Email
-                </button>
+               <a className="w-full" href="mailto:plug.jessadaporn@gmail.com">
+                  <button className="w-full p-3 rounded-lg bg-primary">
+                    <FontAwesomeIcon icon="fa-regular fa-envelope" className="me-2" />
+                    Email
+                  </button>
+               </a>
          
                   <button className="w-full rounded-lg border-primary color-primary">
                     Download CV

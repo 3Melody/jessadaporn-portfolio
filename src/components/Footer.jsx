@@ -25,6 +25,13 @@ const Footer = () => {
               </div>
             </div>
             <div className="h-1 w-full bg-black mt-3 xl:hidden"></div>
+            <div className="flex gap-4 icon justify-center xl:justify-start text-3xl opacity-50 mt-10">
+                        <a href="https://github.com/3Melody" target="_blank"><FontAwesomeIcon data-aos="fade-right" data-aos-delay="100"icon="fa-brands fa-github " style={{color: "black",}} /></a>
+                       <a href="https://www.facebook.com/mni.plug/" target="_blank"> <FontAwesomeIcon data-aos="fade-right" data-aos-delay="200" icon="fa-brands fa-facebook" style={{color: "black",}} /></a>
+                        <a href="mailto:plug.jessadaporn@gmail.com"><FontAwesomeIcon data-aos="fade-right" data-aos-delay="300" icon="fa-solid fa-envelope" style={{color: "black",}} /></a>
+                       <a href="https://www.linkedin.com/in/jessadaporn-tatin/" target="_blank"> <FontAwesomeIcon data-aos="fade-right" data-aos-delay="400" icon="fa-brands fa-linkedin" style={{color: "black",}} /></a>
+                       <a href="https://www.instagram.com/mni.plug/" target="_blank"> <FontAwesomeIcon data-aos="fade-right" data-aos-delay="500" icon="fa-brands fa-instagram" style={{color: "black",}} /></a>
+                        </div>
            <a href="#home">
                 <div className="flex justify-center items-center flex-col mt-10 ">
                   <FontAwesomeIcon 

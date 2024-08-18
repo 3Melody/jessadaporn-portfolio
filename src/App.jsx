@@ -5,8 +5,12 @@ import Skill from "./pages/Skill";
 import Project from "./pages/MyProject";
 // import Contact from "./pages/MyContact";
 // import Comment from "./pages/Comment";
+import Award from './pages/Award';
+import Education from './pages/education';
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
 
 import './App.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -70,8 +74,11 @@ const App = () => {
         <div className="mx-auto"><Navbar /></div>
         <section id="home"><Home /></section>
         <section id="about"><About /></section>
+        <section id="education"><Education /></section>
+        <section id='award'><Award /></section>
         <section id="skill"><Skill /></section>
         <section id="project"><Project /></section>
+        
         {/* <section id="contact"><Contact /></section>
         <Comment /> */}
 
