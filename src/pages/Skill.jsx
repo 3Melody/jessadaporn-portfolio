@@ -7,7 +7,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Skill = () => {
   return (
     <div>
-      <div className="section skill mt-20">
+      <div className="section skill ">
         <div className="w-full">
           <div className="container  mx-auto">
             <div className="xl:hidden">
