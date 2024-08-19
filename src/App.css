@@ -102,10 +102,13 @@ body{
 }
 
 .btn-home{
-    background-color: white;
+    background: rgb(127,203,186);
+    background: linear-gradient(90deg, rgba(127,203,186,1) 0%, rgba(245,222,25,1) 100%); 
     padding: 20px 60px;
     border-radius: 6px;
 }
+
+
 
 .home .icon {
     font-size: 26px;
@@ -349,7 +352,12 @@ box-shadow: 0px 0px 42px 10px rgba(45,255,196,0.9);
     align-items: center;
 }
 
-
+.award .award-name{
+    background-color: #7FCBBA;
+    color: #1D1D1D;
+    
+}
+ 
 
 
 
@@ -532,9 +540,13 @@ box-shadow: 0px 0px 42px 10px rgba(45,255,196,0.9);
     }
 
     .home .profile{
-        width: 450px;
-        top: -50px;
+        width: 100%;
+        top: 50px;
         position: absolute;
+    }
+
+    .home .profile-all{
+        width: 650px;
     }
 
     .home .portfolio{
@@ -645,6 +657,19 @@ box-shadow: 0px 0px 42px 10px rgba(45,255,196,0.9);
         border-radius: 16px;
         width: 100%;
         height: 800px;
+    }
+
+}
+
+@media screen and (min-width: 1535px) {
+    .home .profile{
+        width: 100%;
+        top: -50px;
+        position: absolute;
+    }
+
+    .home .profile-all{
+        width: 800px;
     }
 
 }

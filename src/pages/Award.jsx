@@ -23,17 +23,17 @@ const Award = () => {
             <SwiperSlide>
                 <div className='relative'>
                     <img src={award1} alt="" />
-                    <div className='absolute z-50 bottom-0  award-name bg-black w-full text-white xl:text-3xl text-sm font-bold p-3'>First Place Winner in the Software Engineering Project Day</div>
+                    <div className='absolute z-50 bottom-0  award-name w-full text-white xl:text-3xl text-sm font-bold p-3'>First Place Winner in the Software Engineering Project Day</div>
                     </div></SwiperSlide>
                     <SwiperSlide>
                 <div className='relative'>
                     <img src={award2} alt="" />
-                    <div className='absolute z-50 bottom-0  award-name bg-black w-full text-white xl:text-3xl text-sm font-bold p-3'>Awarded with the Academic Excellence Medal</div>
+                    <div className='absolute z-50 bottom-0  award-name  w-full text-white xl:text-3xl text-sm font-bold p-3'>Awarded with the Academic Excellence Medal</div>
                     </div></SwiperSlide>
                     <SwiperSlide>
                 <div className='relative'>
                     <img src={award3} alt="" />
-                    <div className='absolute z-50 bottom-0  award-name bg-black w-full text-white xl:text-3xl text-sm font-bold p-3'>Second Place Winner in SE Project Day for UX/UI Design</div>
+                    <div className='absolute z-50 bottom-0  award-name  w-full text-white xl:text-3xl text-sm font-bold p-3'>Second Place Winner in SE Project Day for UX/UI Design</div>
                     </div></SwiperSlide>
            
     

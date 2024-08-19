@@ -5,6 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import pro1 from "../assets/home/pro1.png";
+import pro2 from "../assets/home/pro2.png"; 
+import pro3 from "../assets/home/pro3.png"; 
+import pro4 from "../assets/home/pro4.png";
+import pro5 from "../assets/home/pro5.png";
 
 
 
@@ -22,8 +27,9 @@ function intro() {
                
                
                <div className="xl:flex xl:mt-20 xl:justify-between">
-                    <div data-aos="zoom-in"  className="mt-4 relative order-2 ">
-                        <img  src={Profile1} className="profile" alt=""  />
+                    <div data-aos="zoom-in"  className="mt-4 relative order-2 profile-all">
+                        <img  src={pro3} className="profile  xl:hidden block" alt=""  />
+                        <img  src={pro5} className="profile xl:block hidden" alt=""  />
                         <div className="bg-2"></div>
                         <div className="bg-1"></div>
                         </div>
