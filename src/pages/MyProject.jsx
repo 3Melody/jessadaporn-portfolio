@@ -9,10 +9,10 @@ import project3 from "../assets/project/project3-1080.png";
 import project4 from "../assets/project/project4-1080.png";
 
 const projects = [
-  { name: "B-CINEMA", image: project1 },
-  { name: "UP-POP", image: project2 },
-  { name: "JIB Clone", image: project3 },
-  { name: "MOMO Clone", image: project4 },
+  { link:"https://github.com/3Melody",name: "B-CINEMA", image: project1 },
+  { link:"https://github.com/3Melody/UPPOP_VUE",name: "UP-POP", image: project2 },
+  { link:"https://my-jib-clone.onrender.com/",name: "JIB Clone", image: project3 },
+  { link:"https://my-momo-clone.onrender.com/",name: "MOMO Clone", image: project4 },
 ];
 
 const Project = () => {
@@ -47,10 +47,12 @@ const Project = () => {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <div className="box-project">{project.name}</div>
-              <div className="mt-10 project-img">
-                <img src={project.image} className="w-full object-cover" alt=""/>
-              </div>
+             <a href={project.link} target="_blank">
+                <div className="box-project">{project.name}</div>
+                <div className="mt-10 project-img">
+                  <img src={project.image} className="w-full object-cover" alt=""/>
+                </div>
+             </a>
             </SwiperSlide>
           ))}
         </Swiper>
