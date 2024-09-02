@@ -19,7 +19,7 @@ const Project = () => {
   const [currentProjectName, setCurrentProjectName] = useState(projects[0].name);
 
   return (
-    <div data-aos="fade-up" className="project section relative pt-20">
+    <div data-aos="fade-up" className="project section relative ">
       <div className='bg-fled'></div>
       <div className='white name-project font-bold text-4xl xl:text-5xl text-center'>
         <div>NAME PROJECT</div>

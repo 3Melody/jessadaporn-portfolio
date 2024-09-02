@@ -148,7 +148,7 @@ const Skill = () => {
             </div>
           </div>
           
-          <div className="flex white animation mt-20 py-3 skill">
+          <div className="flex white animation py-3 skill">
           <div class="sliding-container">
         <div data-aos="fade-left" data-aos-duration="3000" class="sliding-text">
         HTML === CSS === SCSS === Bootstrap === Tailwind === Javascript === React === VueJS === NodeJs === Java === Firebase === Git === Github === VSCode === Figma  === Adobe Photoshop === &nbsp; HTML === CSS === SCSS === Bootstrap === Tailwind === Javascript === React === VueJS === NodeJs === Java === Firebase === Git === Github === VSCode === Figma  === Adobe Photoshop ===
