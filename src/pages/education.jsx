@@ -46,7 +46,7 @@ const Education = () => {
                   <div className="box-edu ">
                   University of Phayao
                 <div className="detail">Software Engineering</div>
-                <div className="detail">GPA : 3.46</div>
+                <div className="detail">GPA : 3.41</div>
                 <div className="detail">2022 - Now</div>
                   </div>
                 </div>

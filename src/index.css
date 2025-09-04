@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Subtle page fade-in */
+html, body, #root { height: 100%; }
+body { opacity: 0; animation: bodyFadeIn 0.6s ease forwards; }
+@keyframes bodyFadeIn { from { opacity: 0 } to { opacity: 1 } }

@@ -22,10 +22,10 @@ const Project = () => {
 
   return (
     <div data-aos="fade-up" className="project section relative ">
-      <div className='bg-fled'></div>
+      <div className='bg-fled hidden md:block'></div>
       <div className='white name-project font-bold text-4xl xl:text-5xl text-center'>
-        <div>NAME PROJECT</div>
-        <div className="project-name">{currentProjectName}</div>
+        <div className="hidden md:block">NAME PROJECT</div>
+        <div className="project-name hidden md:block">{currentProjectName}</div>
       </div>
 
       <div className="container white mx-auto">
