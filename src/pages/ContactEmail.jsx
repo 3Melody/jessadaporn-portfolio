@@ -25,7 +25,7 @@ const ContactEmail = () => {
       const API_URL = import.meta.env.VITE_BACKEND_URL;
       // const API_KEY = import.meta.env.VITE_BACKEND_API_KEY || 'YOUR_API_KEY';
 
-      await axios.post(API_URL, formData, {
+      await axios.post(API_URL + '/send-email' , formData, {
         headers: {
           'Content-Type': 'application/json',
           // 'Authorization': `Bearer ${API_KEY}`
