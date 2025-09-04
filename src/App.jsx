@@ -86,7 +86,7 @@ const App = () => {
          <a href='#about'> <div data-id="about"><FontAwesomeIcon icon="fa-regular fa-address-card" /></div></a>
          <a href='#experience'> <div data-id="experience"><FontAwesomeIcon icon="fa-solid fa-briefcase" /></div></a>
          <a href='#skill'> <div data-id="skill"><FontAwesomeIcon icon="fa-brands fa-react" /></div></a>
-         <a href='#project'> <div data-id="project"><FontAwesomeIcon icon="fa-regular fa-file-code" /></div></a>
+         {/* <a href='#project'> <div data-id="project"><FontAwesomeIcon icon="fa-regular fa-file-code" /></div></a> */}
          <a href='#contact-email'> <div data-id="contact-email"><FontAwesomeIcon icon="fa-regular fa-envelope" /></div></a>
          {/* <a href='#contact'> <div data-id="contact"><FontAwesomeIcon icon="fa-regular fa-envelope" /></div></a> */}
         </div>
