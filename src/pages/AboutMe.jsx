@@ -28,10 +28,7 @@ export class AboutMe extends Component {
               <div className="color-primary mt-10 text-xl">About</div>
               <div className="text-2xl text-white mt-4">Profile</div>
               <div className="detail mt-2">
-                I'm a third-year Software Engineering student at University of
-                Phayao, looking for an internship opportunity from April to May.
-                Eager to learn, contribute, and gain real-world insights in software
-                development. Excited to join your team. Thank you.
+               My name is Jessadaporn Tatin. I am excited to start my career in software development, eager to learn, improve my skills, and contribute to your team. I look forward to growing professionally and making a positive impact.
               </div>
               <div className="white mt-5">Contact</div>
               <div className="detail mt-2">
@@ -47,7 +44,7 @@ export class AboutMe extends Component {
                </a>
          
                   <button className="w-full rounded-lg border-primary color-primary">
-                   <a href="https://drive.google.com/file/d/1yjT0G9Hp4yGoKnxISQF7tMW0dzbEHD0F/view?usp=drive_link" target="_blank"> Download CV</a>
+                   <a href="https://drive.google.com/file/d/1CLuMdvlenv09IVv92L_Xhx-YQCMgZVwI/view?usp=sharing" target="_blank"> Download CV</a>
                   </button>
             
               </div>

@@ -114,6 +114,18 @@ const Skill = () => {
                        <div data-aos="zoom-in-up" data-aos-delay="400" className="box-skill"><FontAwesomeIcon icon="fa-brands fa-react" /></div>
                     </SwiperSlide>
                     <SwiperSlide>
+                       <div data-aos="zoom-in-up" data-aos-delay="400" className="box-skill"><FontAwesomeIcon icon="fa-brands fa-angular" /></div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                       <div data-aos="zoom-in-up" data-aos-delay="400" className="box-skill"><FontAwesomeIcon icon="fa-brands fa-java" /></div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                       <div data-aos="zoom-in-up" data-aos-delay="400" className="box-skill"><FontAwesomeIcon icon="fa-brands fa-python" /></div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                       <div data-aos="zoom-in-up" data-aos-delay="400" className="box-skill"><FontAwesomeIcon icon="fa-brands fa-node" /></div>
+                    </SwiperSlide>
+                    <SwiperSlide>
                       <div data-aos="zoom-in-up" data-aos-delay="500" className="box-skill " style={{fontSize:"40px"}}>Nextjs</div>
                     </SwiperSlide>
                     <SwiperSlide>

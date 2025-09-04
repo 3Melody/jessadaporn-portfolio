@@ -7,12 +7,14 @@ import project1 from "../assets/project/project1-1080.png";
 import project2 from "../assets/project/project2-1080.png";
 import project3 from "../assets/project/project3-1080.png";
 import project4 from "../assets/project/project4-1080.png";
+import project5 from "../assets/project/picture5.png";
 
 const projects = [
   { link:"https://github.com/3Melody",name: "B-CINEMA", image: project1 },
   { link:"https://github.com/3Melody/UPPOP_VUE",name: "UP-POP", image: project2 },
   { link:"https://my-jib-clone.onrender.com/",name: "JIB Clone", image: project3 },
   { link:"https://my-momo-clone.onrender.com/",name: "MOMO Clone", image: project4 },
+  { link:"https://nextflix-clone-fe.vercel.app/",name: "Netflix Clone", image: project5 },
 ];
 
 const Project = () => {
